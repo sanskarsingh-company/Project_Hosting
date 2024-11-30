@@ -1,0 +1,71 @@
+.table-container {
+  margin: 0 auto;
+  /* width: 86%; */
+  margin-top: 1rem;
+}
+
+.addBtnHeader {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 2rem;
+}
+
+.addBtnHeader .addUserBtn {
+  background: #1ad16c;
+  color: white;
+  padding: 10px 20px;
+}
+
+.addBtnHeader .addUserBtn:hover{
+  background: #18f97d;
+  transition:var(--transition);
+}
+
+/* .table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #E8F0FE;
+} */
+
+tbody {
+  cursor: pointer;
+}
+
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.device-status {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  text-transform: capitalize;
+}
+
+
+.delete-icon {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add responsive scroll for table after 1288px */
+@media screen and (max-width: 1288px) {
+  .table-container {
+    overflow-x: auto;
+    /* width: 100%; */
+  }
+
+  .table {
+    min-width: 1000px; /* Set a minimum width for the table */
+  }
+}
+
+@media screen and(max-width: 426px) {
+  .add-user-button {
+    padding: 0.5px 1px;
+  }
+}
+
+

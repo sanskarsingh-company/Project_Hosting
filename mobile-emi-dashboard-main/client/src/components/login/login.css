@@ -1,0 +1,146 @@
+.auth-img img{
+    height: 97vh;
+    background-color: #ffffff;
+    object-fit: cover;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.header-img img{
+    max-width: 43%;
+}
+
+.header-heading h1 {
+    font-weight: 700;
+}
+
+.header-heading p {
+    color:#4E14BF;
+    font-size: 12px;
+    text-transform:uppercase;
+    font-weight: 400;
+}
+
+.header-login {
+    margin-top: 1rem;
+}
+
+.header-login h2 {
+    font-size: 25px;
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.header-login p {
+    font-size: 17px;
+    color: black;
+    font-weight: 500px;
+}
+
+.login-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.login-inputs {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.login-input label {
+    font-size: 15px;
+}
+
+.login-input input {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 12px 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login-input input::placeholder{
+    color: rgba(0, 0, 0, 0.275);
+}
+
+.login-input input:focus{
+    border: 1px solid#4E14BF;
+}
+
+.login-input p {
+    margin: 0;
+}
+
+.login-input-checkbox{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.login-input-checkbox label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.login-input-checkbox input {
+    width: 18px;
+    height: 18px;
+    border-radius: 20%;
+    padding: 30px;
+}
+
+.login-input-checkbox input[type=checkbox]:checked{
+    background-color: #4E14BF;
+}
+
+.loginBtn button{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 30px;
+
+    background-color: #4E14BF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Hide first column after 769px */
+@media (max-width: 768px) {
+    .leftauth {
+      display: none; /* Hides the first column */
+    }
+  
+    /* Adjust the second column to take full width when the first column is hidden */
+    .rightauth {
+      width: 100%; /* Make the second column take the full width */
+    }
+  
+    /* Adjust the auth-img height for smaller screens */
+    .auth-img img {
+      height: auto; /* Prevent large image from affecting layout */
+      width: 100%; /* Ensure image takes full width */
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+  }
+  

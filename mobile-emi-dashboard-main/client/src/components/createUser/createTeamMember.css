@@ -1,0 +1,98 @@
+.createTeamContainer {
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 28px;
+}
+
+.createTeamLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.createTeamLeft .createTeamLogo{
+    width: 75%;
+}
+
+.createTeamLeft h3 {
+    font-weight: 700;
+}
+
+.createTeamright{
+    width: 70%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createTeamright h2 {
+   font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px 10px;
+    background-color: #4E14BF;
+}
+
+.createTeamright form {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.createTeamInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.createTeamInput label{
+    font-size: 15px;
+}
+
+.createTeamInput input{
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;   
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-weight: 500;
+}
+
+.createTeamInput input::placeholder{
+    color: rgba(0, 0, 0, 0.275);
+}
+
+.createTeamInput input:focus{
+    border: 1px solid#4E14BF;
+}
+
+.createTeamright button{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: #4E14BF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:584px) {
+    .createTeamContainer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .createTeamright {
+        width: 100%;
+    }
+
+    .createTeamright h2 {
+        font-size: 18px;
+    }
+}

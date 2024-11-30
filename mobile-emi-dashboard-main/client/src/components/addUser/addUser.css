@@ -1,0 +1,98 @@
+.addUsermodal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.addUsermodalContainer {
+  background-color: white;
+  padding: 42px 47px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  width: 42%;
+  /* margin-top: 9rem; */
+}
+
+.addUsermodalContainer > form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.addUsermodalContainer h2 {
+    font-weight: 800;
+    text-align: center;
+}
+
+.addUsermodalContainer label {
+    font-size: 12px;
+    font-weight: 500;
+    /* margin-top: 2rem; */
+}
+
+.addUsermodalContainer select {
+    border: 1px solid #4e14bf;
+    border-radius: 22px;
+    padding: 12px 10px;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+
+
+.addUserstatusUpdateModal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.addUserstatusUpdateModal button {
+    padding: 17px 31px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.addUserstatusUpdateModal .close {
+    background-color: red;
+    
+}
+.addUserstatusUpdateModal .update {
+    background-color: green;
+
+}
+
+.addUserForm input {
+    border: 1px solid #4e14bf;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+@media screen and (max-width: 1042px) {
+    .addUsermodalContainer h2 {
+        font-size: 29px;
+    }
+    .addUsermodalContainer {
+        width: 95%;
+    }
+    .addUserstatusUpdateModal button {
+        padding: 15px 12px;
+        font-size: 14px;
+    }
+    .addUsermodalContainer label {
+        font-size: 18px;
+    }
+}

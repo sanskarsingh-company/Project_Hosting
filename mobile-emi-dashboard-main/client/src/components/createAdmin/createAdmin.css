@@ -1,0 +1,99 @@
+.createAdminContainer {
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 28px;
+}
+
+.createAdminLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.createAdminLeft .createAdminLogo{
+    width: 75%;
+}
+
+.createAdminLeft h3 {
+    font-weight: 700;
+}
+
+.createAdminright{
+    width: 70%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createAdminright h2 {
+   font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px 10px;
+    background-color: #4E14BF;
+}
+
+.createAdminright form {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.createAdminInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.createAdminInput label{
+    font-size: 15px;
+}
+
+.createAdminInput input{
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;   
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-weight: 500;
+}
+
+.createAdminInput input::placeholder{
+    color: rgba(0, 0, 0, 0.275);
+}
+
+.createAdminInput input:focus{
+    border: 1px solid#4E14BF;
+}
+
+.createAdminright button{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: #4E14BF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:584px) {
+    .createAdminContainer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .createAdminright {
+        width: 100%;
+    }
+
+    .createAdminright h2 {
+        font-size: 18px;
+    }
+}
